@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222"
+    android:backgroundTint="#303030"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="46dp"
+        android:layout_height="38dp"
+        android:scaleX="4"
+        android:scaleY="4"
+        android:text="Vamos Rachar!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#FFC107"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.131" />
+
+    <TextView
+        android:id="@+id/textTitle2"
+        android:layout_width="119dp"
+        android:layout_height="39dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:text="Valor da conta:"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#7BC478"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.326" />
+
+    <TextView
+        android:id="@+id/textTitle3"
+        android:layout_width="183dp"
+        android:layout_height="38dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:text="Númro de pessoas:"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#7BC478"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.515" />
+
+    <TextView
+        android:id="@+id/labelResult"
+        android:layout_width="216dp"
+        android:layout_height="59dp"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:text="Cada um paga: "
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#FFC107"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.794" />
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="216dp"
+        android:layout_height="59dp"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:text="R$ 00,00"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#FFF7DE"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.863" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:backgroundTint="#96CE93"
+        android:text="Compartilhar"
+        android:textColor="#000000"
+        android:textColorHighlight="#5EAE5F"
+        android:textColorLink="#FF0000"
+        app:iconTint="#A61B1B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editTextValue"
+        android:layout_width="253dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="96dp"
+        android:ems="10"
+        android:hint="R$ 00,00"
+        android:inputType="number|textPersonName|textEmailAddress|phone"
+        android:textAlignment="center"
+        android:textColor="#B9C5AC"
+        android:textColorHighlight="#CDDC39"
+        android:textColorHint="#505050"
+        android:textColorLink="#FF5722"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumPessoas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/editTextNumPessoas"
+        android:layout_width="256dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="220dp"
+        android:ems="10"
+        android:hint="1"
+        android:inputType="number|textPersonName|textEmailAddress|phone"
+        android:textAlignment="center"
+        android:textColor="#B9C5AC"
+        android:textColorHighlight="#CDDC39"
+        android:textColorHint="#505050"
+        android:textColorLink="#FF5722"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle"
+        app:layout_constraintVertical_bias="0.232" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="115dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.807"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textTitle"
+        app:srcCompat="@drawable/money" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
